@@ -1,7 +1,5 @@
 package br.souza;
 
-import java.util.*;
-
 public class No {
 
     private String info;
