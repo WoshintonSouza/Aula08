@@ -12,6 +12,23 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Lista lista = new Lista();
+
+        lista.addEnd(("Huguinho"));
+        lista.addEnd(("Zezinho"));
+        lista.addStart("Patinhas");
+        lista.addEnd(("Luizinho"));
+
+        System.out.println(lista.Show());
+
+        No removido = lista.removeStart();
+    
+        System.out.println("removido " + removido.getInfo());
+        System.out.println(lista.Show());
+
+        removido = lista.removeEnd();
+
+        System.out.println("removido " + removido.getInfo());
+        System.out.println(lista.Show());
     }
 }
